@@ -1,12 +1,22 @@
 .container {
-
+display: grid;
+grid-template-areas: 
+  "header header"
+  "side-panel dash-tiles";
+grid-template-columns: 1fr 6fr;
 }
-.header {
-
+.container div {
+  background-image: linear-gradient(to right, red, yellow);
 }
-.side-panel {
-
+.container div.header {
+  grid-area: header;
+  text-align: center;
 }
-.dash-tiles {
-  
+.container div.side-panel {
+  grid-area: side-panel;
+  text-align: left;
+}
+.container div.dash-tiles {
+  grid-area: dash-tiles;
+  text-align: center;
 }
