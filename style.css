@@ -3,7 +3,6 @@ display: grid;
 grid-template-areas: 
   "header header header header header header header"
   "dash-tiles dash-tiles dash-tiles dash-tiles dash-tiles dash-tiles dash-tiles";
- /* grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr; */
 }
 .container div {
   text-align: left;
@@ -14,6 +13,7 @@ grid-template-areas:
   padding-bottom: 5%;
 }
 .container div.dash-tiles {
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-area: dash-tiles;
   text-align: center;
   background-image: linear-gradient(to right, red, yellow); 
