@@ -2,7 +2,7 @@
 display: grid;
 grid-template-areas: 
   "header header header header header header header"
-  "side-panel dash-tiles.dawn dash-tiles.sunrise dash-tiles.solarnoon dash-tiles.sunset dash-tiles.dusk dash-tiles.daylength";
+  "side-panel dawn sunrise solarnoon sunset dusk daylength";
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
 }
