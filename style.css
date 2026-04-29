@@ -13,7 +13,7 @@ grid-template-areas:
   padding-bottom: 5%;
 }
 .container div.dash-tiles {
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-area: dash-tiles;
   text-align: center;
   background-image: linear-gradient(to right, red, yellow); 
