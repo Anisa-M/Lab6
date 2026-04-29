@@ -15,7 +15,7 @@ grid-template-areas:
   text-align: center;
   padding-bottom: 5%;
 }
-.container div.side-panel {
+.container div.dash-tiles div.side-panel {
   grid-area: side-panel;
   text-align: left;
 }
