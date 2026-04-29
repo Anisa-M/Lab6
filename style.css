@@ -1,9 +1,9 @@
 .container {
 display: grid;
 grid-template-areas: 
-  "header header"
+  "header header header header header header header"
   "side-panel dash-tiles-dawn dash-tiles-sunrise dash-tiles-solarnoon dash-tiles-sunset dash-tiles-dusk dash-tiles-daylength";
-grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .container div {
   background-image: linear-gradient(to right, red, yellow);
