@@ -22,7 +22,7 @@ grid-template-areas:
   text-align: center;
   background-image: linear-gradient(to right, red, yellow); 
   padding-right: 5%;
-  padding-left: 2%;
+  padding-left: 0%;
 
 }
 .container div.dash-tiles div.side-panel {
