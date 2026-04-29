@@ -7,12 +7,12 @@ grid-template-areas:
   background-image: linear-gradient(to right, red, yellow);
 }
 .container div {
- text-align: center;
+ text-align: left;
 }
 .container div.header {
   grid-area: header;
   text-align: center;
-  padding: auto;
+  padding-bottom: 10%;
 }
 .container div.side-panel {
   grid-area: side-panel;
