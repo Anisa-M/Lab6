@@ -2,7 +2,7 @@
 display: grid;
 grid-template-areas: 
   "header header header header header header header"
-  "side-panel dash-tiles-dawn dash-tiles-sunrise dash-tiles-solarnoon dash-tiles-sunset dash-tiles-dusk dash-tiles-daylength";
+  "side-panel dawn sunrise solarnoon sunset dusk daylength";
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
   background-image: linear-gradient(to right, red, yellow);
 }
@@ -12,7 +12,7 @@ grid-template-areas:
 .container div.header {
   grid-area: header;
   text-align: center;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 .container div.side-panel {
   grid-area: side-panel;
