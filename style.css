@@ -4,9 +4,10 @@ grid-template-areas:
   "header header header header header header header"
   "side-panel dash-tiles-dawn dash-tiles-sunrise dash-tiles-solarnoon dash-tiles-sunset dash-tiles-dusk dash-tiles-daylength";
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-image: linear-gradient(to right, red, yellow);
 }
 .container div {
-  background-image: linear-gradient(to right, red, yellow);
+ 
 }
 .container div.header {
   grid-area: header;
