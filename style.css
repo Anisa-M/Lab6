@@ -29,3 +29,18 @@ grid-template-areas:
   grid-area: dawn;
   color: blueviolet;
 }
+.container div.dash-tiles div.sunrise {
+grid-area: sunrise;
+}
+.container div.dash-tiles div.solarnoon {
+grid-area: solarnoon;
+}
+.container div.dash-tiles div.sunset {
+grid-area: sunset;
+}
+.container div.dash-tiles div.dusk {
+grid-area: dusk;
+}
+.container div.dash-tiles div.daylength {
+  grid-area: daylength;
+}
