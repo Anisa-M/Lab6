@@ -13,6 +13,8 @@ grid-template-areas:
   padding-bottom: 5%;
 }
 .container div.dash-tiles {
+  grid-template-areas: 
+    "side-panel dawn sunrise solarnoon sunset dusk daylength";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-area: dash-tiles;
   text-align: center;
