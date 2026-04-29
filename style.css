@@ -2,24 +2,29 @@
 display: grid;
 grid-template-areas: 
   "header header header header header header header"
-  "side-panel dash-tiles.dawn dash-tiles.sunrise dash-tiles.solarnoon dash-tiles.sunset dash-tiles.dusk dash-tiles.daylength";
+  "side-panel dawn dash-tiles.sunrise dash-tiles.solarnoon dash-tiles.sunset dash-tiles.dusk dash-tiles.daylength";
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
 }
 .container div {
   text-align: left;
-  background-image: linear-gradient(to right, red, yellow); 
 }
 .container div.header {
   grid-area: header;
   text-align: center;
   padding-bottom: 5%;
 }
+.container div.dash-tiles {
+  grid-area: dash-tiles;
+  text-align: center;
+  background-image: linear-gradient(to right, red, yellow); 
+
+}
 .container div.dash-tiles div.side-panel {
   grid-area: side-panel;
   text-align: left;
 }
-.container div.dash-tiles {
-  grid-area: dash-tiles;
-  text-align: center;
+.container div.dash-tiles div.dawn {
+  grid-area: dawn;
+  color: blueviolet;
 }
