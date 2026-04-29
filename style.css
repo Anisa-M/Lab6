@@ -21,6 +21,7 @@ grid-template-areas:
   grid-area: dash-tiles;
   text-align: center;
   background-image: linear-gradient(to right, red, yellow); 
+  padding-right: 5%;
 
 }
 .container div.dash-tiles div.side-panel {
