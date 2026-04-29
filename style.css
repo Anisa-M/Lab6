@@ -29,7 +29,6 @@ grid-template-areas:
 }
 .container div.dash-tiles div.dawn {
   grid-area: dawn;
-  color: blueviolet;
 }
 .container div.dash-tiles div.sunrise {
 grid-area: sunrise;
