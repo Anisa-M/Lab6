@@ -1,8 +1,8 @@
 .container {
 display: grid;
 grid-template-areas: 
-  "header header header header header header header"
-  "side-panel dawn sunrise solarnoon sunset dusk daylength";
+  "header header "
+  "dash-tiles dash-tiles";
 }
 .container div {
   text-align: left;
@@ -13,9 +13,11 @@ grid-template-areas:
   padding-bottom: 5%;
 }
 .container div.dash-tiles {
- /* grid-template-areas: 
+  grid-area: dash-tiles;
+  display: grid;
+ grid-template-areas: 
     "side-panel dawn sunrise solarnoon sunset dusk daylength";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-area: dash-tiles;
   text-align: center;
   background-image: linear-gradient(to right, red, yellow); 
