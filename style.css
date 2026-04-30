@@ -96,7 +96,7 @@ grid-area: dusk;
 .container div.sec-dash-tiles div.daylength {
   grid-area: daylength;
 }
-.error-message {
+#error-message {
   color: red;
   font-weight: bold;
   margin-top: 10px;
