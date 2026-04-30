@@ -26,7 +26,7 @@ column-gap: 10%;
 }
 .List {
   background-color: red;
-  padding: 2%;
+  padding: 0.5%;
 }
 .container div.subHeader {
 grid-area: subheader;
