@@ -4,6 +4,7 @@ grid-template-areas:
   "header header "
   "dash-tiles dash-tiles"
   "sec-dash-tiles sec-dash-tiles";
+  padding-bottom: 20%;
 }
 .container div {
   text-align: left;
@@ -62,7 +63,6 @@ grid-area: dusk;
   background-image: linear-gradient(to right, red, yellow); 
   padding-right: 5%;
   padding-left: 0.5%;
-  padding-top: 2%;
 
 }
 .container div.sec-dash-tiles div.side-panel {
