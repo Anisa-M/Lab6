@@ -31,7 +31,7 @@ locationDropdown.addEventListener('change', function() {
     } else if (selectedLocation === "Phoenix") {
         lat = 33.4484367;
         lng = -112.074141;
-    } else if (selectedLocation === "Indiana") {
+    } else if (selectedLocation === "Michigan City") {
         lat = 41.7075394;
         lng = -86.8950297;
     } else if (selectedLocation === "Dublin") {
