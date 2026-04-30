@@ -62,6 +62,7 @@ grid-area: dusk;
   background-image: linear-gradient(to right, red, yellow); 
   padding-right: 5%;
   padding-left: 0.5%;
+  padding-top: 2%;
 
 }
 .container div.sec-dash-tiles div.side-panel {
@@ -70,7 +71,6 @@ grid-area: dusk;
 }
 .container div.sec-dash-tiles div.dawn {
   grid-area: dawn;
-  color: blueviolet;
 }
 .container div.sec-dash-tiles div.sunrise {
 grid-area: sunrise;
