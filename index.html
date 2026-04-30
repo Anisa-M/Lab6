@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Page Title</title>
+  <title>Sunrise Sunset Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="script.js"></script>
-  <div class="header"><h2>Sunrise Sunset Dashboard</h2></div>
+  <div class="header">
+    <h2>Sunrise Sunset Dashboard</h2>
+  </div>
+
   <div class="List">
     <label for="locations">Choose a location:</label>
     <select id="locations" name="locations">
+      <option value="" disabled selected>Select a city...</option>
       <option value="Chicago">Chicago, IL</option>
       <option value="Boston">Boston, MA</option>
       <option value="Sacramento">Sacramento, CA</option>
@@ -23,86 +26,97 @@
       <option value="Rome">Rome, Italy</option>
       <option value="Milwaukee">Milwaukee, WI</option>
     </select>
+  </div>
 
-
+  <div class="container">
+    <!-- TODAY'S SECTION -->
+    <div class="subHeader"><h3>Today's Information</h3></div>
     <div class="dash-tiles">
-    <!-- Side Panel for Time Zone and Location -->
-    <div class="side-panel">
-      <div class="label">Time Zone</div>
-      <div class="data"><span id="time-today"></span></div>
-      <div class="label">Location</div>
-      <div class="data"><span id="loc-today"></span></div>
+      <div class="side-panel">
+        <div class="label">Location:</div>
+        <div class="data"><span id="loc-today"></span></div>
+        <div class="label">Time Zone:</div>
+        <div class="data"><span id="timezone-today"></span></div>
+      </div>
+      
+      <div class="dawn">
+        <div class="label">Dawn</div>
+        <div class="data"><span id="dawn-today"></span></div>
+      </div>
+
+      <div class="sunrise">
+        <div class="label">Sunrise</div>
+        <div class="data"><span id="sunrise-today"></span></div>
+      </div>
+
+      <div class="solarnoon">
+        <div class="label">Solar Noon</div>
+        <div class="data"><span id="solarNoon-today"></span></div>
+      </div>
+
+      <div class="sunset">
+        <div class="label">Sunset</div>
+        <div class="data"><span id="sunset-today"></span></div>
+      </div>
+
+      <div class="dusk">
+        <div class="label">Dusk</div>
+        <div class="data"><span id="dusk-today"></span></div>
+      </div>
+
+      <div class="daylength">
+        <div class="label">Day Length</div>
+        <div class="data"><span id="dayLength-today"></span></div>
+      </div>
     </div>
 
-    <div class="dawn">
-      <div class="label">Dawn</div>
-      <div class="data"><span id="dawn-today"></span></div>
-    </div>
+    <!-- Tommorow's Section -->
+    <div class="sec-subHeader"><h3>Tomorrow's Information</h3></div>
+    <div class="sec-dash-tiles">
+      <div class="side-panel">
+        <div class="label">Location:</div>
+        <div class="data"><span id="loc-tomorrow"></span></div>
+        <div class="label">Time Zone:</div>
+        <div class="data"><span id="timezone-tomorrow"></span></div>
+      </div>
 
-    <div class="sunrise">
-      <div class="label">Sunrise</div>
-      <div class="data"><span id="sunrise-today"></span></div>
-    </div>
+      <div class="dawn">
+        <div class="label">Dawn</div>
+        <div class="data"><span id="dawn-tomorrow"></span></div>
+      </div>
 
-    <div class="solarnoon">
-      <div class="label">Solar Noon</div>
-      <div class="data"><span id="noon-today"></span></div>
-    </div>
+      <div class="sunrise">
+        <div class="label">Sunrise</div>
+        <div class="data"><span id="sunrise-tomorrow"></span></div>
+      </div>
 
-    <div class="sunset">
-      <div class="label">Sunset</div>
-      <div class="data"><span id="sunset-today"></span></div>
-    </div>
+      <div class="solarnoon">
+        <div class="label">Solar Noon</div>
+        <div class="data"><span id="solarNoon-tomorrow"></span></div>
+      </div>
 
-    <div class="dusk">
-      <div class="label">Dusk</div>
-      <div class="data"><span id="dusk-today"></span></div>
-    </div>
+      <div class="sunset">
+        <div class="label">Sunset</div>
+        <div class="data"><span id="sunset-tomorrow"></span></div>
+      </div>
 
-    <div class="daylength">
-      <div class="label">Day Length</div>
-      <div class="data"><span id="length-today"></span></div>
+      <div class="dusk">
+        <div class="label">Dusk</div>
+        <div class="data"><span id="dusk-tomorrow"></span></div>
+      </div>
+
+      <div class="daylength">
+        <div class="label">Day Length</div>
+        <div class="data"><span id="dayLength-tomorrow"></span></div>
+      </div>
     </div>
   </div>
-  Tomorrow's Dashboard Tiles (sec-dash-tiles)
-  <div class="sec-dash-tiles">
-    <div class="side-panel">
-      <div class="label">Time Zone</div>
-      <div class="data"><span id="time-tomorrow"></span></div>
-      <div class="label">Location</div>
-      <div class="data"><span id="loc-tomorrow"></span></div>
-    </div>
 
-    <div class="dawn">
-      <div class="label">Dawn</div>
-      <div class="data"><span id="dawn-tomorrow"></span></div>
-    </div>
+  <!-- Mandatory API Credit -->
+  <footer>
+    <p>Data provided by the <a href="https://sunrisesunset.io/api/">Sunrise Sunset API</a></p>
+  </footer>
 
-    <div class="sunrise">
-      <div class="label">Sunrise</div>
-      <div class="data"><span id="sunrise-tomorrow"></span></div>
-    </div>
-
-    <div class="solarnoon">
-      <div class="label">Solar Noon</div>
-      <div class="data"><span id="noon-tomorrow"></span></div>
-    </div>
-
-    <div class="sunset">
-      <div class="label">Sunset</div>
-      <div class="data"><span id="sunset-tomorrow"></span></div>
-    </div>
-
-    <div class="dusk">
-      <div class="label">Dusk</div>
-      <div class="data"><span id="dusk-tomorrow"></span></div>
-    </div>
-
-    <div class="daylength">
-      <div class="label">Day Length</div>
-      <div class="data"><span id="length-tomorrow"></span></div>
-    </div>
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
-
