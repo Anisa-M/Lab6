@@ -39,20 +39,33 @@ locationDropdown.addEventListener('change', function() {
     } 
 
     if (lat && lng) {
-      const url = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}`
+      const todayUrl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}`;
+      const tomorrowUrl = 'https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&date=tomorrow';
 
-      fetch(url)
+      fetch(todayUrl)
         .then(response => response.json())
         .then(data => {
-          document.querySelector('#sunrise').innerHTML = data.results.sunrise
-          document.querySelector('#sunset').innerHTML = data.results.sunset
-          document.querySelector('#dawn').innerHTML = data.results.dawn
-          document.querySelector('#dusk').innerHTML = data.results.dusk
-          document.querySelector('#solarnoon').innerHTML = data.results.solar_noon
-          document.querySelector('#daylength').innerHTML = data.results.day_length
-          document.querySelector('#time').innerHTML = data.results.timezone
-        document.querySelector('#raw-output').innerHTML = JSON.stringify(data)
+          document.querySelector('#sunrise-today').innerHTML = data.results.sunrise
+          document.querySelector('#sunset-today').innerHTML = data.results.sunset
+          document.querySelector('#dawn-today').innerHTML = data.results.dawn
+          document.querySelector('#dusk-today').innerHTML = data.results.dusk
+          document.querySelector('#solarNoon-today').innerHTML = data.results.solar_noon
+          document.querySelector('#dayLength-today').innerHTML = data.results.day_length
+          document.querySelector('#timezone-today').innerHTML = data.results.timezone
         })
         .catch(error => console.error('Error:', error))
+
+      fetch(tomorrowUrl)
+        .then(response => response.json())
+        .then(data => {
+          document.querySelector('#sunrise-tomorrow').innerHTML = data.results.sunrise
+          document.querySelector('#sunset-tomorrow').innerHTML = data.results.sunset
+          document.querySelector('#dawn-tomorrow').innerHTML = data.results.dawn
+          document.querySelector('#dusk-tomorrow').innerHTML = data.results.dusk
+          document.querySelector('#solarNoon-tomorrow').innerHTML = data.results.solar_noon
+          document.querySelector('#dayLength-tomorrow').innerHTML = data.results.day_length
+          document.querySelector('#timezone-tomorrow').innerHTML = data.results.timezone
+        })
+        .catch(error => console.error('Error:', error))        
           }
       });
