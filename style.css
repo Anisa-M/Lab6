@@ -39,6 +39,7 @@ margin-top: 0;
 .container div.subHeader {
 grid-area: subheader;
 background-color: bisque;
+padding: 20%;
 }
 .container div.dash-tiles {
   grid-area: dash-tiles;
