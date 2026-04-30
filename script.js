@@ -47,6 +47,10 @@ locationDropdown.addEventListener('change', function() {
           document.querySelector('#sunrise').innerHTML = data.results.sunrise
           document.querySelector('#sunset').innerHTML = data.results.sunset
           document.querySelector('#dawn').innerHTML = data.results.dawn
+          document.querySelector('#dusk').innerHTML = data.results.dusk
+          document.querySelector('#solarnoon').innerHTML = data.results.solar_noon
+          document.querySelector('#daylength').innerHTML = data.results.day_length
+          document.querySelector('#time').innerHTML = data.results.timezone
         document.querySelector('#raw-output').innerHTML = JSON.stringify(data)
         })
         .catch(error => console.error('Error:', error))
