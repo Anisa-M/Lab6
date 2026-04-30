@@ -4,7 +4,7 @@ grid-template-areas:
   "header header "
   "dash-tiles dash-tiles"
   "sec-dash-tiles sec-dash-tiles";
-background-color: white;
+row-gap: 2%;
 }
 .container div {
   text-align: left;
