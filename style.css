@@ -38,6 +38,7 @@ margin-top: 0;
 }
 .container div.subHeader {
 grid-area: subheader;
+background-color: bisque;
 }
 .container div.dash-tiles {
   grid-area: dash-tiles;
