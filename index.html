@@ -8,9 +8,28 @@
 </head>
 <body>
   <script src="script.js"></script>
+  <div class="header"><h2>Sunrise Sunset Dashboard</h2></div>
+  <div class="List">
+    <label for="locations">Choose a location:</label>
+    <select id="locations" name="locations">
+      <option value="Chicago">Chicago, IL</option>
+      <option value="Boston">Boston, MA</option>
+      <option value="Sacramento">Sacramento, CA</option>
+      <option value="Vegas">Las Vegas, NV</option>
+      <option value="STL">St Louis, MO</option>
+      <option value="Phoenix">Phoenix, AZ</option>
+      <option value="Indiana">Michigan City, IN</option>
+      <option value="Dublin">Dublin, Ireland</option>
+      <option value="Rome">Rome, Italy</option>
+      <option value="Milwaukee">Milwaukee, WI</option>
+    </select>
+
+
   <div class="container">
+    <!-- TODAY'S SECTION -->
     <div class="subHeader"><h3>Today's Information</h3></div>
     <div class="dash-tiles">
+      <!-- Example of the block structure for each item -->
       <div class="block">
         <div class="label">Sunrise</div>
         <div class="data"><span id="sunrise-today"></span></div>
@@ -42,7 +61,6 @@
       </div>
     </div>
 
-    
     <div class="sec-subHeader"><h3>Tomorrow's Information</h3></div>
     <div class="sec-dash-tiles">
       <div class="block">
