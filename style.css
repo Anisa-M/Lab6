@@ -20,7 +20,7 @@ column-gap: 10%;
 .header {
   grid-area: header;
   text-align: center;
-  padding-bottom: 2%;
+  padding-bottom: 0%;
 
 }
 .container div.subHeader {
