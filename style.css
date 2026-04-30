@@ -60,6 +60,7 @@ grid-area: dusk;
 
 .container div.sec-subHeader {
   grid-area: sec-subheader;
+  padding: 0%;
 }
 /*second dashboard tiles */
 .container div.sec-dash-tiles {
