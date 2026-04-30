@@ -57,7 +57,7 @@ grid-area: dusk;
  grid-template-areas: 
     "side-panel dawn sunrise solarnoon sunset dusk daylength";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-area: dash-tiles;
+  grid-area: sec-dash-tiles;
   text-align: center;
   background-image: linear-gradient(to right, red, yellow); 
   padding-right: 5%;
