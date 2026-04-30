@@ -28,6 +28,7 @@ column-gap: 10%;
   background-image: linear-gradient(to right, red, yellow); 
   padding-right: 5%;
   padding-left: 0.5%;
+  padding-top: 20%;
 
 }
 .container div.dash-tiles div.side-panel {
