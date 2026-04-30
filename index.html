@@ -25,72 +25,82 @@
     </select>
 
 
-  <div class="container">
-    <!-- TODAY'S SECTION -->
-    <div class="subHeader"><h3>Today's Information</h3></div>
     <div class="dash-tiles">
-      <!-- Example of the block structure for each item -->
-      <div class="block">
-        <div class="label">Sunrise</div>
-        <div class="data"><span id="sunrise-today"></span></div>
-      </div>
-      <div class="block">
-        <div class="label">Sunset</div>
-        <div class="data"><span id="sunset-today"></span></div>
-      </div>
-      <div class="block">
-        <div class="label">Dawn</div>
-        <div class="data"><span id="dawn-today"></span></div>
-      </div>
-      <div class="block">
-        <div class="label">Dusk</div>
-        <div class="data"><span id="dusk-today"></span></div>
-      </div>
-      <div class="block">
-        <div class="label">Solar Noon</div>
-        <div class="data"><span id="solarNoon-today"></span></div>
-      </div>
-      <div class="block">
-        <div class="label">Day Length</div>
-        <div class="data"><span id="dayLength-today"></span></div>
-      </div>
-      <div class="side-panel">
-        <p>Time zone: <span id="timezone-today"></span></p>
-        <p>Location: <span id="selectedLocation"></span></p>
-      </div>
+    <!-- Side Panel for Time Zone and Location -->
+    <div class="side-panel">
+      <div class="label">Time Zone</div>
+      <div class="data"><span id="time-today"></span></div>
+      <div class="label">Location</div>
+      <div class="data"><span id="loc-today"></span></div>
     </div>
 
+    <div class="dawn">
+      <div class="label">Dawn</div>
+      <div class="data"><span id="dawn-today"></span></div>
+    </div>
 
-    <div class="sec-subHeader"><h3>Tomorrow's Information</h3></div>
-    <div class="sec-dash-tiles">
-      <div class="block">
-        <div class="label">Sunrise</div>
-        <div class="data"><span id="sunrise-tomorrow"></span></div>
-      </div>
-      <div class="block">
-        <div class="label">Sunset</div>
-        <div class="data"><span id="sunset-tomorrow"></span></div>
-      </div>
-      <div class="block">
-        <div class="label">Dawn</div>
-        <div class="data"><span id="dawn-tomorrow"></span></div>
-      </div>
-      <div class="block">
-        <div class="label">Dusk</div>
-        <div class="data"><span id="dusk-tomorrow"></span></div>
-      </div>
-      <div class="block">
-        <div class="label">Solar Noon</div>
-        <div class="data"><span id="noon-tomorrow"></span></div>
-      </div>
-      <div class="block">
-        <div class="label">Day Length</div>
-        <div class="data"><span id="length-tomorrow"></span></div>
-      </div>
-      <div class="side-panel">
-        <p>Time zone: <span id="timezone-tomorrow"></span></p>
-        <p>Location: <span id="loc-tomorrow"></span></p>
-      </div>
+    <div class="sunrise">
+      <div class="label">Sunrise</div>
+      <div class="data"><span id="sunrise-today"></span></div>
+    </div>
+
+    <div class="solarnoon">
+      <div class="label">Solar Noon</div>
+      <div class="data"><span id="noon-today"></span></div>
+    </div>
+
+    <div class="sunset">
+      <div class="label">Sunset</div>
+      <div class="data"><span id="sunset-today"></span></div>
+    </div>
+
+    <div class="dusk">
+      <div class="label">Dusk</div>
+      <div class="data"><span id="dusk-today"></span></div>
+    </div>
+
+    <div class="daylength">
+      <div class="label">Day Length</div>
+      <div class="data"><span id="length-today"></span></div>
+    </div>
+  </div>
+  Tomorrow's Dashboard Tiles (sec-dash-tiles)
+  <div class="sec-dash-tiles">
+    <div class="side-panel">
+      <div class="label">Time Zone</div>
+      <div class="data"><span id="time-tomorrow"></span></div>
+      <div class="label">Location</div>
+      <div class="data"><span id="loc-tomorrow"></span></div>
+    </div>
+
+    <div class="dawn">
+      <div class="label">Dawn</div>
+      <div class="data"><span id="dawn-tomorrow"></span></div>
+    </div>
+
+    <div class="sunrise">
+      <div class="label">Sunrise</div>
+      <div class="data"><span id="sunrise-tomorrow"></span></div>
+    </div>
+
+    <div class="solarnoon">
+      <div class="label">Solar Noon</div>
+      <div class="data"><span id="noon-tomorrow"></span></div>
+    </div>
+
+    <div class="sunset">
+      <div class="label">Sunset</div>
+      <div class="data"><span id="sunset-tomorrow"></span></div>
+    </div>
+
+    <div class="dusk">
+      <div class="label">Dusk</div>
+      <div class="data"><span id="dusk-tomorrow"></span></div>
+    </div>
+
+    <div class="daylength">
+      <div class="label">Day Length</div>
+      <div class="data"><span id="length-tomorrow"></span></div>
     </div>
   </div>
 </body>
