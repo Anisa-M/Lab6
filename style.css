@@ -4,8 +4,8 @@ grid-template-areas:
   "header header "
   "dash-tiles dash-tiles"
   "sec-dash-tiles sec-dash-tiles";
-  background-color: blue;
 row-gap: 10%;
+column-gap: 10%;
 
 }
 .container div {
