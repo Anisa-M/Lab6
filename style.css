@@ -70,6 +70,7 @@ grid-area: dusk;
 }
 .container div.sec-dash-tiles div.dawn {
   grid-area: dawn;
+  color: blueviolet;
 }
 .container div.sec-dash-tiles div.sunrise {
 grid-area: sunrise;
