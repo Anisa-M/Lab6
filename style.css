@@ -2,7 +2,8 @@
 display: grid;
 grid-template-areas: 
   "header header "
-  "dash-tiles dash-tiles";
+  "dash-tiles dash-tiles"
+  "sec-dash-tiles sec-dash-tiles";
 }
 .container div {
   text-align: left;
@@ -46,5 +47,42 @@ grid-area: sunset;
 grid-area: dusk;
 }
 .container div.dash-tiles div.daylength {
+  grid-area: daylength;
+}
+
+/*second dashboard tiles */
+.container div.sec-dash-tiles {
+  grid-area: dash-tiles;
+  display: grid;
+ grid-template-areas: 
+    "side-panel dawn sunrise solarnoon sunset dusk daylength";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: dash-tiles;
+  text-align: center;
+  background-image: linear-gradient(to right, red, yellow); 
+  padding-right: 5%;
+  padding-left: 0.5%;
+
+}
+.container div.sec-dash-tiles div.side-panel {
+  grid-area: side-panel;
+  text-align: left;
+}
+.container div.sec-dash-tiles div.dawn {
+  grid-area: dawn;
+}
+.container div.sec-dash-tiles div.sunrise {
+grid-area: sunrise;
+}
+.container div.sec-dash-tiles div.solarnoon {
+grid-area: solarnoon;
+}
+.container div.sec-dash-tiles div.sunset {
+grid-area: sunset;
+}
+.container div.sec-dash-tiles div.dusk {
+grid-area: dusk;
+}
+.container div.sec-dash-tiles div.daylength {
   grid-area: daylength;
 }
