@@ -96,3 +96,6 @@ grid-area: dusk;
 .container div.sec-dash-tiles div.daylength {
   grid-area: daylength;
 }
+.footer {
+  padding: 20%;
+}
