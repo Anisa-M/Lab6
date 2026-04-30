@@ -29,7 +29,6 @@ grid-template-areas:
 .container div.dash-tiles div.side-panel {
   grid-area: side-panel;
   text-align: left;
-  padding-bottom: 1.5%;
 }
 .container div.dash-tiles div.dawn {
   grid-area: dawn;
