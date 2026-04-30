@@ -17,6 +17,7 @@ grid-template-areas:
   "sec-dash-tiles sec-dash-tiles";
 row-gap: 6%;
 column-gap: 10%;
+margin-top: 0;
 
 }
 .container div {
