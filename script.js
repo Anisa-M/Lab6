@@ -1,9 +1,16 @@
 const locationDropdown = document.getElementById('locations');
+
 locationDropdown.addEventListener('change', function() {
     
-    // Get the value of the newly selected option
+    // Get the value of the selected option
     let selectedLocation = locationDropdown.value;
     let lat, lng;
+
+    // Clear any previous error messages at the start of a new search
+    const errorDisplay = document.querySelector('#error-message');
+    if (errorDisplay) {
+        errorDisplay.innerHTML = '';
+    }
 
     // 3. The coordinate logic
     if (selectedLocation === "Chicago") {
@@ -42,32 +49,46 @@ locationDropdown.addEventListener('change', function() {
       const todayUrl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}`;
       const tomorrowUrl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&date=tomorrow`;
 
+      // Today's Data
       fetch(todayUrl)
         .then(response => response.json())
         .then(data => {
-          document.querySelector('#sunrise-today').innerHTML = data.results.sunrise
-          document.querySelector('#sunset-today').innerHTML = data.results.sunset
-          document.querySelector('#dawn-today').innerHTML = data.results.dawn
-          document.querySelector('#dusk-today').innerHTML = data.results.dusk
-          document.querySelector('#solarNoon-today').innerHTML = data.results.solar_noon
-          document.querySelector('#dayLength-today').innerHTML = data.results.day_length
-          document.querySelector('#timezone-today').innerHTML = data.results.timezone
+          document.querySelector('#sunrise-today').innerHTML = data.results.sunrise;
+          document.querySelector('#sunset-today').innerHTML = data.results.sunset;
+          document.querySelector('#dawn-today').innerHTML = data.results.dawn;
+          document.querySelector('#dusk-today').innerHTML = data.results.dusk;
+          document.querySelector('#solarNoon-today').innerHTML = data.results.solar_noon;
+          document.querySelector('#dayLength-today').innerHTML = data.results.day_length;
+          document.querySelector('#timezone-today').innerHTML = data.results.timezone;
           document.querySelector('#loc-today').innerHTML = selectedLocation;
         })
-        .catch(error => console.error('Error:', error))
+        .catch(error => {
+          // Show the user an error message for today's data
+          if (errorDisplay) {
+              errorDisplay.innerHTML = "Error: Could not retrieve today's information. Please check your connection.";
+          }
+          console.error('Error:', error);
+        });
 
+      // Tomorrow's Data
       fetch(tomorrowUrl)
         .then(response => response.json())
         .then(data => {
-          document.querySelector('#sunrise-tomorrow').innerHTML = data.results.sunrise
-          document.querySelector('#sunset-tomorrow').innerHTML = data.results.sunset
-          document.querySelector('#dawn-tomorrow').innerHTML = data.results.dawn
-          document.querySelector('#dusk-tomorrow').innerHTML = data.results.dusk
-          document.querySelector('#solarNoon-tomorrow').innerHTML = data.results.solar_noon
-          document.querySelector('#dayLength-tomorrow').innerHTML = data.results.day_length
-          document.querySelector('#timezone-tomorrow').innerHTML = data.results.timezone
-          document.querySelector('#loc-tomorrow').innerHTML = selectedLocation
+          document.querySelector('#sunrise-tomorrow').innerHTML = data.results.sunrise;
+          document.querySelector('#sunset-tomorrow').innerHTML = data.results.sunset;
+          document.querySelector('#dawn-tomorrow').innerHTML = data.results.dawn;
+          document.querySelector('#dusk-tomorrow').innerHTML = data.results.dusk;
+          document.querySelector('#solarNoon-tomorrow').innerHTML = data.results.solar_noon;
+          document.querySelector('#dayLength-tomorrow').innerHTML = data.results.day_length;
+          document.querySelector('#timezone-tomorrow').innerHTML = data.results.timezone;
+          document.querySelector('#loc-tomorrow').innerHTML = selectedLocation;
         })
-        .catch(error => console.error('Error:', error))        
+        .catch(error => {
+          // Show the user an error message for tomorrow's data
+          if (errorDisplay) {
+              errorDisplay.innerHTML = "Error: Could not retrieve tomorrow's information. Please try again.";
           }
-      });
+          console.error('Error:', error);
+        });        
+    }
+});
