@@ -97,5 +97,6 @@ grid-area: dusk;
   grid-area: daylength;
 }
 .footer {
+  color: blueviolet;
   padding: 20%;
 }
