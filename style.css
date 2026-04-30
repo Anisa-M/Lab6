@@ -6,7 +6,7 @@ grid-template-areas:
   "dash-tiles dash-tiles"
   "sec-subheader sec-subheader"
   "sec-dash-tiles sec-dash-tiles";
-row-gap: 10%;
+row-gap: 6%;
 column-gap: 10%;
 
 }
