@@ -13,7 +13,7 @@ column-gap: 10%;
 .container div {
   text-align: left;
 }
-.container div.header {
+.header {
   grid-area: header;
   text-align: center;
   padding-bottom: 2%;
@@ -71,7 +71,7 @@ grid-area: dusk;
   grid-area: sec-dash-tiles;
   text-align: center;
   background-image: linear-gradient(to right, red, yellow); 
-  padding: 2% 5% 5% 0.5%;
+  padding: 2% 5% 3% 0.5%;
 
 }
 .container div.sec-dash-tiles div.side-panel {
