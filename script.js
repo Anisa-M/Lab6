@@ -40,7 +40,7 @@ locationDropdown.addEventListener('change', function() {
 
     if (lat && lng) {
       const todayUrl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}`;
-      const tomorrowUrl = 'https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&date=tomorrow';
+      const tomorrowUrl = `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&date=tomorrow`;
 
       fetch(todayUrl)
         .then(response => response.json())
@@ -52,6 +52,7 @@ locationDropdown.addEventListener('change', function() {
           document.querySelector('#solarNoon-today').innerHTML = data.results.solar_noon
           document.querySelector('#dayLength-today').innerHTML = data.results.day_length
           document.querySelector('#timezone-today').innerHTML = data.results.timezone
+          document.querySelector('#loc-today').innerHTML = selectedLocation;
         })
         .catch(error => console.error('Error:', error))
 
@@ -65,6 +66,7 @@ locationDropdown.addEventListener('change', function() {
           document.querySelector('#solarNoon-tomorrow').innerHTML = data.results.solar_noon
           document.querySelector('#dayLength-tomorrow').innerHTML = data.results.day_length
           document.querySelector('#timezone-tomorrow').innerHTML = data.results.timezone
+          document.querySelector('#loc-tomorrow').innerHTML = selectedLocation
         })
         .catch(error => console.error('Error:', error))        
           }
